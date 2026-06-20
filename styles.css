@@ -168,12 +168,13 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   border-radius: 28px;
   overflow: hidden;
-  background: var(--accent-2);
+  background: linear-gradient(180deg, #ffe5dc 0%, #fdf6f2 100%);
   aspect-ratio: 4 / 5;
   box-shadow: 0 30px 60px -30px rgba(20,20,20,.25);
 }
 .hero-media__frame img {
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: contain;
+  object-position: bottom center;
 }
 .hero-badge {
   position: absolute;
@@ -223,9 +224,10 @@ a { color: inherit; text-decoration: none; }
 .card-img {
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: var(--accent-2);
+  background: linear-gradient(180deg, #ffe5dc 0%, #fff 100%);
+  display: flex; align-items: flex-end; justify-content: center;
 }
-.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.card-img img { width: 100%; height: 100%; object-fit: contain; object-position: bottom center; transition: transform .4s ease; }
 .card:hover .card-img img { transform: scale(1.04); }
 .card-body { padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .tag {
