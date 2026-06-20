@@ -8,20 +8,47 @@
   <meta name="description" content="Авторские фитнес-программы чемпионки: похудеть, подтянуть попу и живот, набрать форму в зале, восстановиться после родов. Без диет." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- ============ TOP NOTICE BAR ============ -->
+  <div class="top-bar">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>★ Чемпионка мира по фитнес-бикини</span>
+        <span>● 15 лет тренерского опыта</span>
+        <span>★ 580 000+ учениц по всему миру</span>
+        <span>● Автор первых марафонов стройности в России</span>
+        <span>★ Мама двоих — вернулась в форму за 100 дней</span>
+        <span>● Без диет и голода</span>
+        <span>★ Чемпионка мира по фитнес-бикини</span>
+        <span>● 15 лет тренерского опыта</span>
+        <span>★ 580 000+ учениц по всему миру</span>
+        <span>● Автор первых марафонов стройности в России</span>
+        <span>★ Мама двоих — вернулась в форму за 100 дней</span>
+        <span>● Без диет и голода</span>
+      </div>
+    </div>
+  </div>
+
   <!-- ============ HEADER ============ -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo">Катя Усманова</a>
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        Катя Усманова
+      </a>
       <nav class="nav">
         <a href="#programs">Программы</a>
-        <a href="#help">Помощь с выбором</a>
+        <a href="#stats">О Кате</a>
+        <a href="#help">Подбор</a>
       </nav>
-      <button class="btn btn--ghost btn--sm js-open-modal" data-source="header">Войти</button>
+      <button class="btn btn--primary btn--sm js-open-modal" data-source="header">
+        Записаться
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
     </div>
   </header>
 
@@ -29,30 +56,122 @@
 
     <!-- ============ SCREEN 1: HERO ============ -->
     <section class="hero">
+      <div class="hero-blob hero-blob--1"></div>
+      <div class="hero-blob hero-blob--2"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Чемпионка фитнес-бикини · С 2015 года</p>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Чемпионка фитнес-бикини · с 2015 года
+          </div>
           <h1 class="hero-title">
-            Приведите тело в форму с&nbsp;чемпионкой <span class="accent">Катей Усмановой</span>
+            Приведите тело в&nbsp;форму с&nbsp;чемпионкой
+            <span class="title-accent">
+              <span class="title-accent__text">Катей Усмановой</span>
+              <svg class="title-accent__line" viewBox="0 0 280 14" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M2 7 C 70 1, 140 13, 278 5" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </svg>
+            </span>
           </h1>
           <p class="hero-sub">
             Без диет, голода и&nbsp;запретов&nbsp;— с&nbsp;пользой для здоровья.
-            Похудеть, подтянуть попу и&nbsp;живот, набрать форму в&nbsp;зале,
-            восстановиться после&nbsp;родов&nbsp;— тренировки и&nbsp;питание под&nbsp;вашу цель.
+            Похудеть, подтянуть попу и&nbsp;живот, набрать форму в&nbsp;зале или&nbsp;восстановиться после&nbsp;родов&nbsp;— тренировки и&nbsp;питание под&nbsp;вашу цель.
           </p>
+
           <div class="hero-cta">
-            <a href="#programs" class="btn btn--primary btn--lg">Выбрать программу</a>
-            <a href="#help" class="btn btn--ghost btn--lg">Помочь с выбором</a>
+            <a href="#programs" class="btn btn--primary btn--xl">
+              Выбрать программу
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#help" class="btn btn--ghost btn--xl">Помочь с&nbsp;выбором</a>
           </div>
-          <ul class="hero-stats">
-            <li><strong>580 000+</strong><span>учениц с&nbsp;Катей</span></li>
-            <li><strong>15 лет</strong><span>опыта тренера</span></li>
-            <li><strong>4–6 кг</strong><span>в среднем за&nbsp;месяц</span></li>
-          </ul>
+
+          <div class="hero-social">
+            <div class="hero-avatars">
+              <span class="avatar avatar--1"></span>
+              <span class="avatar avatar--2"></span>
+              <span class="avatar avatar--3"></span>
+              <span class="avatar avatar--4"></span>
+            </div>
+            <div class="hero-social__text">
+              <div class="stars" aria-label="Рейтинг 4.9 из 5">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p>
+                <strong>4.9 из&nbsp;5</strong>
+                <span> · 580&nbsp;000+ учениц</span>
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class="hero-media">
           <div class="hero-media__frame">
             <img src="images/hero.png" alt="Катя Усманова" loading="eager" />
+          </div>
+
+          <div class="float-badge float-badge--champion">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/>
+              <path d="M17 4h3a3 3 0 0 1-3 5M7 4H4a3 3 0 0 0 3 5"/>
+            </svg>
+            <div>
+              <strong>Чемпионка</strong>
+              <span>мира 2017</span>
+            </div>
+          </div>
+
+          <div class="float-badge float-badge--result">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <path d="M22 4 12 14.01l-3-3"/>
+            </svg>
+            <div>
+              <strong>4–6&nbsp;кг</strong>
+              <span>за&nbsp;первый месяц</span>
+            </div>
+          </div>
+
+          <div class="hero-stamp" aria-hidden="true">
+            <svg viewBox="0 0 160 160">
+              <defs>
+                <path id="circle" d="M80,80 m-66,0 a66,66 0 1,1 132,0 a66,66 0 1,1 -132,0" />
+              </defs>
+              <text font-family="Unbounded, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+                <textPath xlink:href="#circle" startOffset="0">METHOD ★ USMANOVA ★ AUTHENTIC ★ SINCE 2015 ★ </textPath>
+              </text>
+              <circle cx="80" cy="80" r="34" fill="currentColor"/>
+              <text x="80" y="78" text-anchor="middle" font-family="Unbounded, sans-serif" font-size="14" font-weight="900" fill="#fff">15</text>
+              <text x="80" y="93" text-anchor="middle" font-family="Manrope, sans-serif" font-size="8" font-weight="700" letter-spacing="1" fill="#fff">YEARS</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS STRIP ============ -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <strong>580 000+</strong>
+            <span>довольных учениц</span>
+          </div>
+          <div class="stat">
+            <strong>15 лет</strong>
+            <span>опыта тренера</span>
+          </div>
+          <div class="stat">
+            <strong>50+</strong>
+            <span>авторских программ</span>
+          </div>
+          <div class="stat">
+            <strong>4.9 ★</strong>
+            <span>средняя оценка</span>
           </div>
         </div>
       </div>
@@ -62,92 +181,260 @@
     <section class="programs" id="programs">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow eyebrow--dark">Тренировки дома</p>
-          <h2 class="section-title">Программы под вашу цель</h2>
-          <p class="section-sub">Метод Усмановой: от&nbsp;первой техники до&nbsp;марафонов стройности и&nbsp;упругих ягодиц.</p>
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow-dot"></span>
+            Тренировки дома
+          </p>
+          <h2 class="section-title">
+            Программы под <span class="title-mark">вашу&nbsp;цель</span>
+          </h2>
+          <p class="section-sub">Метод Усмановой: от&nbsp;первых тренировок до&nbsp;марафонов стройности и&nbsp;упругих ягодиц. Видимый результат уже на&nbsp;6-й день.</p>
         </header>
 
+        <div class="filter-bar" role="tablist" aria-label="Категории программ">
+          <button class="chip is-active" type="button" data-filter="all" role="tab" aria-selected="true">Все программы</button>
+          <button class="chip" type="button" data-filter="home" role="tab">Дома</button>
+          <button class="chip" type="button" data-filter="gym" role="tab">В зале</button>
+          <button class="chip" type="button" data-filter="cardio" role="tab">Жиросжигание</button>
+        </div>
+
         <div class="cards-scroll" role="list">
-          <article class="card" role="listitem">
-            <div class="card-img"><img src="images/prog-flagship.png" alt="Метод Усмановой" loading="lazy" /></div>
+
+          <article class="card" role="listitem" data-cat="home">
+            <div class="card-img">
+              <span class="card-badge card-badge--flag">Флагман</span>
+              <span class="card-fav" aria-label="В избранное">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </span>
+              <img src="images/prog-flagship.png" alt="Метод Усмановой" loading="lazy" />
+            </div>
             <div class="card-body">
-              <span class="tag tag--flag">Флагман</span>
+              <div class="card-meta">
+                <span class="card-cat">Тренировки дома</span>
+                <span class="card-duration">8 недель · 64 урока</span>
+              </div>
               <h3 class="card-title">Метод Усмановой</h3>
-              <p class="card-text">Освоите технику и&nbsp;втянетесь в&nbsp;регулярные тренировки&nbsp;— без&nbsp;травм и&nbsp;через силу.</p>
-              <button class="card-link js-open-modal" data-source="card-flagship">Подробнее →</button>
+              <p class="card-text">Освоите технику и&nbsp;втянетесь в&nbsp;регулярные тренировки&nbsp;— без&nbsp;травм и&nbsp;через&nbsp;силу.</p>
+              <div class="card-foot">
+                <div class="price">
+                  <span class="price-old">9&nbsp;900&nbsp;₽</span>
+                  <span class="price-new">5&nbsp;490&nbsp;₽</span>
+                </div>
+                <button class="btn btn--primary btn--sm js-open-modal" data-source="card-flagship">
+                  Подробнее
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
           </article>
 
-          <article class="card" role="listitem">
-            <div class="card-img"><img src="images/prog-slim.png" alt="Марафон Стройности" loading="lazy" /></div>
+          <article class="card" role="listitem" data-cat="home">
+            <div class="card-img">
+              <span class="card-badge">21 день</span>
+              <span class="card-fav" aria-label="В избранное">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </span>
+              <img src="images/prog-slim.png" alt="Марафон Стройности" loading="lazy" />
+            </div>
             <div class="card-body">
-              <span class="tag">21 день</span>
+              <div class="card-meta">
+                <span class="card-cat">Похудение</span>
+                <span class="card-duration">3 недели · 21 урок</span>
+              </div>
               <h3 class="card-title">Марафон Стройности</h3>
               <p class="card-text">Первый видимый результат за&nbsp;21&nbsp;день&nbsp;— уходит первый жир, появляется тонус и&nbsp;лёгкость.</p>
-              <button class="card-link js-open-modal" data-source="card-slim">Подробнее →</button>
+              <div class="card-foot">
+                <div class="price">
+                  <span class="price-old">6&nbsp;900&nbsp;₽</span>
+                  <span class="price-new">3&nbsp;290&nbsp;₽</span>
+                </div>
+                <button class="btn btn--primary btn--sm js-open-modal" data-source="card-slim">
+                  Подробнее
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
           </article>
 
-          <article class="card" role="listitem">
-            <div class="card-img"><img src="images/prog-booty.png" alt="Упругая попа" loading="lazy" /></div>
+          <article class="card" role="listitem" data-cat="home">
+            <div class="card-img">
+              <span class="card-badge card-badge--hit">Хит</span>
+              <span class="card-fav" aria-label="В избранное">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </span>
+              <img src="images/prog-booty.png" alt="Упругая попа 1.0" loading="lazy" />
+            </div>
             <div class="card-body">
-              <span class="tag">Хит</span>
+              <div class="card-meta">
+                <span class="card-cat">Ягодицы</span>
+                <span class="card-duration">6 недель · 36 уроков</span>
+              </div>
               <h3 class="card-title">Упругая попа 1.0</h3>
               <p class="card-text">Первый объём и&nbsp;подтянутость ягодиц&nbsp;— с&nbsp;собственным весом, без&nbsp;оборудования.</p>
-              <button class="card-link js-open-modal" data-source="card-booty">Подробнее →</button>
+              <div class="card-foot">
+                <div class="price">
+                  <span class="price-old">7&nbsp;490&nbsp;₽</span>
+                  <span class="price-new">3&nbsp;990&nbsp;₽</span>
+                </div>
+                <button class="btn btn--primary btn--sm js-open-modal" data-source="card-booty">
+                  Подробнее
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
           </article>
 
-          <article class="card" role="listitem">
-            <div class="card-img"><img src="images/prog-flat.png" alt="Плоский живот" loading="lazy" /></div>
+          <article class="card" role="listitem" data-cat="home">
+            <div class="card-img">
+              <span class="card-badge">Пресс</span>
+              <span class="card-fav" aria-label="В избранное">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </span>
+              <img src="images/prog-flat.png" alt="Плоский живот" loading="lazy" />
+            </div>
             <div class="card-body">
-              <span class="tag">Пресс</span>
+              <div class="card-meta">
+                <span class="card-cat">Живот</span>
+                <span class="card-duration">4 недели · 28 уроков</span>
+              </div>
               <h3 class="card-title">Плоский живот</h3>
               <p class="card-text">Убрать вываливающийся живот, который не&nbsp;уходит даже после&nbsp;похудения.</p>
-              <button class="card-link js-open-modal" data-source="card-flat">Подробнее →</button>
+              <div class="card-foot">
+                <div class="price">
+                  <span class="price-old">5&nbsp;990&nbsp;₽</span>
+                  <span class="price-new">2&nbsp;990&nbsp;₽</span>
+                </div>
+                <button class="btn btn--primary btn--sm js-open-modal" data-source="card-flat">
+                  Подробнее
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
           </article>
 
-          <article class="card" role="listitem">
-            <div class="card-img"><img src="images/prog-burn.png" alt="Жиросжигающий курс" loading="lazy" /></div>
+          <article class="card" role="listitem" data-cat="cardio">
+            <div class="card-img">
+              <span class="card-badge card-badge--sale">−40%</span>
+              <span class="card-fav" aria-label="В избранное">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </span>
+              <img src="images/prog-burn.png" alt="Жиросжигающий курс" loading="lazy" />
+            </div>
             <div class="card-body">
-              <span class="tag">6 недель</span>
+              <div class="card-meta">
+                <span class="card-cat">Жиросжигание</span>
+                <span class="card-duration">6 недель · 42 урока</span>
+              </div>
               <h3 class="card-title">Жиросжигающий</h3>
               <p class="card-text">Сжечь жир и&nbsp;проявить рельеф за&nbsp;6&nbsp;недель. Для тех, кто уже тренировался.</p>
-              <button class="card-link js-open-modal" data-source="card-burn">Подробнее →</button>
+              <div class="card-foot">
+                <div class="price">
+                  <span class="price-old">8&nbsp;990&nbsp;₽</span>
+                  <span class="price-new">5&nbsp;390&nbsp;₽</span>
+                </div>
+                <button class="btn btn--primary btn--sm js-open-modal" data-source="card-burn">
+                  Подробнее
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
           </article>
 
-          <article class="card" role="listitem">
-            <div class="card-img"><img src="images/prog-gym.png" alt="Курс для зала" loading="lazy" /></div>
+          <article class="card" role="listitem" data-cat="gym">
+            <div class="card-img">
+              <span class="card-badge">В зале</span>
+              <span class="card-fav" aria-label="В избранное">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </span>
+              <img src="images/prog-gym.png" alt="Курс для зала" loading="lazy" />
+            </div>
             <div class="card-body">
-              <span class="tag">В&nbsp;зале</span>
+              <div class="card-meta">
+                <span class="card-cat">Тренажёрный зал</span>
+                <span class="card-duration">10 недель · 60 уроков</span>
+              </div>
               <h3 class="card-title">Курс для зала</h3>
               <p class="card-text">Мышцы снова растут&nbsp;— когда дома прогресс уже&nbsp;встал. Программа на&nbsp;мышечный объём.</p>
-              <button class="card-link js-open-modal" data-source="card-gym">Подробнее →</button>
+              <div class="card-foot">
+                <div class="price">
+                  <span class="price-old">11&nbsp;900&nbsp;₽</span>
+                  <span class="price-new">6&nbsp;990&nbsp;₽</span>
+                </div>
+                <button class="btn btn--primary btn--sm js-open-modal" data-source="card-gym">
+                  Подробнее
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </button>
+              </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
     <!-- ============ SCREEN 3: HELP / FORM ============ -->
     <section class="help" id="help">
+      <div class="help-glow"></div>
       <div class="container help-grid">
         <div class="help-copy">
-          <p class="eyebrow eyebrow--light">Не знаете, с чего начать?</p>
-          <h2 class="help-title">Подберём программу под вашу&nbsp;цель и&nbsp;уровень</h2>
-          <p class="help-sub">Это бесплатно и&nbsp;быстро. Оставьте контакт&nbsp;— и&nbsp;мы&nbsp;напишем в&nbsp;удобный мессенджер.</p>
+          <p class="eyebrow eyebrow--light">
+            <span class="eyebrow-dot"></span>
+            Подбор за 60 секунд
+          </p>
+          <h2 class="help-title">
+            Не знаете, с&nbsp;чего начать?
+            <span class="help-title__accent">Подберём программу под&nbsp;вас.</span>
+          </h2>
+          <p class="help-sub">
+            Это бесплатно и&nbsp;быстро. Оставьте контакт — куратор напишет в&nbsp;удобном мессенджере, уточнит цель, уровень и&nbsp;опыт.
+          </p>
 
-          <ul class="help-bullets">
-            <li><span>✓</span> Учтём цель: похудение, форма, после&nbsp;родов</li>
-            <li><span>✓</span> Подскажем, с&nbsp;чего стартовать</li>
-            <li><span>✓</span> Дадим ссылку на&nbsp;первое занятие</li>
-          </ul>
+          <ol class="help-steps">
+            <li>
+              <span class="step-num">1</span>
+              <div>
+                <strong>Расскажете цель</strong>
+                <p>Похудеть, подтянуть фигуру, набрать форму или&nbsp;восстановиться после&nbsp;родов.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <div>
+                <strong>Куратор подберёт</strong>
+                <p>Уточнит уровень, опыт и&nbsp;противопоказания, пришлёт 2–3&nbsp;подходящих варианта.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              <div>
+                <strong>Стартуете уже сегодня</strong>
+                <p>Доступ к&nbsp;программе и&nbsp;первое занятие&nbsp;— сразу после&nbsp;оплаты.</p>
+              </div>
+            </li>
+          </ol>
+
+          <figure class="testimonial">
+            <div class="testimonial-stars" aria-label="5 из 5">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <blockquote>«Этот год перевернул мою жизнь полностью. Я&nbsp;поменяла все свои привычки, полюбила спорт и&nbsp;здоровую еду. Прошла все Катины марафоны&nbsp;— и&nbsp;каждый давал результат.»</blockquote>
+            <figcaption>
+              <span class="testimonial-avatar"></span>
+              <span><strong>Алина М.</strong> · ученица 2&nbsp;года</span>
+            </figcaption>
+          </figure>
         </div>
 
         <form class="help-form" id="helpForm" novalidate>
-          <h3 class="help-form__title">Заявка на подбор</h3>
+          <div class="help-form__head">
+            <h3 class="help-form__title">Заявка на&nbsp;подбор</h3>
+            <span class="help-form__pill">бесплатно</span>
+          </div>
+          <p class="help-form__lead">Перезвоним в&nbsp;течение 15&nbsp;минут в&nbsp;рабочее время.</p>
 
           <label class="field">
             <span>Как к вам обращаться?</span>
@@ -161,30 +448,56 @@
             <em class="field-error" data-for="phone"></em>
           </label>
 
-          <label class="field">
-            <span>Ваша цель</span>
-            <select name="goal" required>
-              <option value="">— выберите —</option>
-              <option>Похудеть</option>
-              <option>Подтянуть попу и живот</option>
-              <option>Набрать форму в зале</option>
-              <option>Восстановиться после родов</option>
-              <option>Сама пока не знаю</option>
-            </select>
+          <div class="field">
+            <span class="field-label">Ваша цель</span>
+            <div class="goal-grid" role="radiogroup" aria-label="Цель">
+              <label class="goal">
+                <input type="radio" name="goal" value="Похудеть" required />
+                <span class="goal-card">
+                  <span class="goal-emoji">🔥</span>
+                  <span>Похудеть</span>
+                </span>
+              </label>
+              <label class="goal">
+                <input type="radio" name="goal" value="Подтянуть фигуру" />
+                <span class="goal-card">
+                  <span class="goal-emoji">💪</span>
+                  <span>Подтянуть фигуру</span>
+                </span>
+              </label>
+              <label class="goal">
+                <input type="radio" name="goal" value="Набрать форму" />
+                <span class="goal-card">
+                  <span class="goal-emoji">🏋️‍♀️</span>
+                  <span>Набрать форму</span>
+                </span>
+              </label>
+              <label class="goal">
+                <input type="radio" name="goal" value="После родов" />
+                <span class="goal-card">
+                  <span class="goal-emoji">🤍</span>
+                  <span>После родов</span>
+                </span>
+              </label>
+            </div>
             <em class="field-error" data-for="goal"></em>
-          </label>
+          </div>
 
           <label class="field field--checkbox">
             <input type="checkbox" name="agree" required checked />
-            <span>Согласен на&nbsp;обработку персональных данных</span>
+            <span>Согласен на&nbsp;обработку персональных данных и&nbsp;получение информационных сообщений</span>
           </label>
 
-          <button type="submit" class="btn btn--primary btn--lg btn--full">
-            <span class="btn-label">Отправить заявку</span>
+          <button type="submit" class="btn btn--primary btn--xl btn--full">
+            <span class="btn-label">Получить подбор</span>
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
             <span class="btn-spinner" aria-hidden="true"></span>
           </button>
 
-          <p class="help-form__hint">Перезвоним в&nbsp;течение 15&nbsp;минут в&nbsp;рабочее время.</p>
+          <p class="help-form__hint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Ваши данные защищены. Не передаём третьим лицам.
+          </p>
         </form>
       </div>
     </section>
@@ -193,7 +506,13 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2015–2026 Катя Усманова · Демо-сборка для тестового задания</p>
+      <div class="footer-brand">
+        <a href="#" class="logo logo--footer">
+          <span class="logo-dot"></span>
+          Катя Усманова
+        </a>
+        <p>© 2015–2026 · Демо-сборка для тестового задания</p>
+      </div>
       <div class="footer-socials">
         <a href="#" aria-label="ВКонтакте"><img src="images/icon-vk.svg" alt="" /></a>
         <a href="#" aria-label="Telegram"><img src="images/icon-tg.svg" alt="" /></a>
@@ -205,9 +524,12 @@
   <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
     <div class="modal-backdrop js-close-modal"></div>
     <div class="modal-card" role="document">
-      <button class="modal-close js-close-modal" aria-label="Закрыть">×</button>
+      <button class="modal-close js-close-modal" aria-label="Закрыть">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <span class="modal-pill">Подбор за 60 сек</span>
       <h3 id="modalTitle" class="modal-title">Подобрать программу</h3>
-      <p class="modal-sub">Оставьте телефон или ник в&nbsp;Telegram&nbsp;— напишем в&nbsp;течение 15&nbsp;минут.</p>
+      <p class="modal-sub">Оставьте телефон или ник в&nbsp;Telegram&nbsp;— куратор напишет в&nbsp;течение 15&nbsp;минут.</p>
 
       <form class="modal-form" id="modalForm" novalidate>
         <label class="field">
@@ -220,8 +542,9 @@
           <input type="tel" name="phone" required minlength="5" placeholder="+7 ___ или @username" />
           <em class="field-error" data-for="phone"></em>
         </label>
-        <button type="submit" class="btn btn--primary btn--lg btn--full">
+        <button type="submit" class="btn btn--primary btn--xl btn--full">
           <span class="btn-label">Отправить</span>
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           <span class="btn-spinner" aria-hidden="true"></span>
         </button>
       </form>
